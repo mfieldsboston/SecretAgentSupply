@@ -30,7 +30,6 @@ body, #header, #footer, .product_grid h3 {
 .product_grid .container,
 .box_text,
 .menu_bar .container,
-/*.product_grid .box,*/
 .product_grid .box .box_image1,
 .product_grid .box .box_image2,
 .product_grid .box .box_image3 {
@@ -40,7 +39,6 @@ body, #header, #footer, .product_grid h3 {
 
   #main2,
   .box_text,
-  /*.product_grid .box,*/
   #footer .container,
   .product_grid .box .box_image1,
   .product_grid .box .box_image2,
@@ -109,12 +107,9 @@ body, #header, #footer, .product_grid h3 {
     }
 
 .image_background .container {
-    /*height: 100%;*/
-    /*max-height: 10rem;*/
     padding-top: 9rem;
     display: flex;
     position: relative;
-    /*align-items: center;*/
     align-items: flex-start;
     }
 
@@ -155,7 +150,6 @@ body, #header, #footer, .product_grid h3 {
   }
 
 .product_grid .box img {
-    /*max-width: 60%;*/
     height: auto;
     display: block;
     max-width: 100%;
