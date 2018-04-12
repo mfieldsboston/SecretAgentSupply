@@ -26,8 +26,10 @@ body, #header, #footer, .product_grid h3 {
 
 #main1, #main2, #main3, #footer .container, #header .container .logo,
 .image_background,
+.menu_bar .container,
 .product_grid .container,
 .box_text,
+.menu_bar .container,
 /*.product_grid .box,*/
 .product_grid .box .box_image1,
 .product_grid .box .box_image2,
@@ -39,6 +41,7 @@ body, #header, #footer, .product_grid h3 {
   #main2,
   .box_text,
   /*.product_grid .box,*/
+  #footer .container,
   .product_grid .box .box_image1,
   .product_grid .box .box_image2,
   .product_grid .box .box_image3 {
@@ -48,7 +51,8 @@ body, #header, #footer, .product_grid h3 {
   .product_grid .box .box_image1,
   .product_grid .box .box_image2,
   .product_grid .box .box_image3 {
-      height: 14rem;
+      /*height: 14rem;*/
+      height: 13rem;
       overflow: hidden;
       background-color: white;
       justify-content: center;
@@ -58,11 +62,12 @@ body, #header, #footer, .product_grid h3 {
   #header .container,
   #footer .container,
   .image_background .container,
+  .menu_bar .container,
   .product_grid .container {
       max-width: 960px;
       margin: 0 auto;
       width: 100%;
-      border: 1px solid yellow;
+      /*border: 1px solid yellow;*/
     }
 
 /* HEADER */
@@ -74,11 +79,10 @@ body, #header, #footer, .product_grid h3 {
   }
 
 #header .logo span {
-  padding: 0.66rem 0 0.66rem 0;
+  padding: 0.66rem 0;
 }
 
 #header .logo img {
-  padding: 0;
   padding-left: 0.5rem;
   max-width: 100%;
   height: 1.5rem;
@@ -116,9 +120,21 @@ body, #header, #footer, .product_grid h3 {
 
 /* MAIN 2 CONTAINER */
 
+#main2 .menu_bar .container {
+  justify-content: space-between;
+}
+
 #main2 .menu_bar {
       background-color: firebrick;
+    }
+
+#main2 .menu_bar span {
+  padding: 0.75rem 0;
+}
+
+#main2 .menu_bar a {
       color: white;
+      text-decoration: none;
     }
 
 .product_grid {
@@ -135,17 +151,33 @@ body, #header, #footer, .product_grid h3 {
 .product_grid .box {
     width: 30%;
     border: 4px solid black;
+    margin-bottom: 3rem;
   }
 
 .product_grid .box img {
-    max-width: 60%;
+    /*max-width: 60%;*/
     height: auto;
     display: block;
+    max-width: 100%;
+    height: 9rem;
+    padding: 2rem 0;
   }
 
 .product_grid h3 {
     color: white;
     text-align: center;
+    padding: 0.5rem 0;
+  }
+
+.product_grid .box.row2 {
+      width: 35%;
+      margin-bottom: 4rem;
+  }
+
+.product_grid .row2 h3 {
+    color: white;
+    text-align: left;
+    padding-left: 2rem;
   }
 
 /* FOOTER */
@@ -154,4 +186,9 @@ body, #header, #footer, .product_grid h3 {
       color: white;
       height: 5rem;
       width: 100%;
+  }
+
+#footer .container {
+      justify-content: center;
+      height: 100%;
   }
